@@ -8,31 +8,34 @@
   <meta name="author" content="Irene Nyakate">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel='stylesheet' type='text/css' href='../css/signin_admin.css'>
+  <link rel='stylesheet' type='text/css' href='signin_admin.css'>
+
 </head>
 
 <body>
+
   <h2>Signin Page</h2>
-  <form id="signin_admin" method="post" action="admin_page.html">
+
+  <form id="signin_user" method="post" action="user_page.html">
     <div class="imgcontainer">
-      <img src="../images/andela.png" alt="Andela logo">
+      <img src="andela.png" alt="Andela logo">
     </div>
 
-    <div class="container admin">
+    <div class="container">
       <label for="usname">
         <b>Username:</b>
-      </label>&nbsp
-      <input type="text" placeholder="Enter Your Username" name="usname" required>
+      </label>
+      <input type="text" placeholder="Enter Your Username" name="usname" required="required">
       <br>
 
       <label for="passw">
         <b>Password:</b>
-      </label>&nbsp
-      <input type="password" placeholder="Enter Your Password" name="passw" required>
+      </label>
+      <input type="password" placeholder="Enter Your Password" name="passw" required="required">
       <br>
 
       <button type="submit" class="signinbtn">
-        <a href="admin_page.html">Admin Signin</a>
+        <a href="user_page.html">User Signin</a>
       </button>
       <label>
         <input type="checkbox" name="remember"> Remember
@@ -41,11 +44,10 @@
 
     <div class="container">
       <button type="button" class="cancelbtn">
-        <a href="../index.html">Cancel</button>
+        <a href="index.html">Cancel</button>
       <span class="passw">Forgot your password?
         <a href="#"></a>
       </span>
-
     </div>
   </form>
 </body>
